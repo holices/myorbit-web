@@ -1,5 +1,5 @@
 type SummaryResponse = {
-  completed: number;
+  completed: number;,
     total: number;
     goalsPerDay: Record<string, {
         id: string;

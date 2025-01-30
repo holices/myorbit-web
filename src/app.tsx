@@ -9,7 +9,7 @@ export function App() {
   const { data, isLoading } = useQuery({
     queryKey: ['summary'],
     queryFn: getSummary,
-    staleTime: 1000 * 10,
+    staleTime: 1000 * 60,
   })
 
   if (isLoading) {

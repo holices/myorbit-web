@@ -4,7 +4,7 @@ interface CreateGoalRequest {
 }
 
 export async function createGoal({ title, desiredWeeklyFrequency }: CreateGoalRequest) {
-  await fetch(`${process.env.NEXT_PUBLIC_API_URL}/goals`, {
+  await fetch(`https://myorbit-backend.onrender.com/goals`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

@@ -9,7 +9,7 @@ type SummaryResponse = {
 }
 
 export async function getSummary(): Promise<SummaryResponse> {
-  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/summary`)
+  const response = await fetch(`https://myorbit-backend.onrender.com/summary`)
   const data = await response.json()
 
   return data.summary

@@ -1,5 +1,5 @@
 export async function createGoalCompletion(goalId: string) {
-  await fetch(`${process.env.NEXT_PUBLIC_API_URL}/completions`, {
+  await fetch(`https://myorbit-backend.onrender.com/completions`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
